@@ -1,0 +1,117 @@
+body {
+    font-family: "EB Garamond";
+    background-color: lightblue;
+    text-align: center;
+    font-size: 1.2em;
+    min-width: 350px;
+}
+#title {
+    margin: 25px auto;
+    font-size: 2.5em;
+}
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    width: 75%;
+    background-color: #f5f5f6;
+}
+
+
+.rowTab {
+  margin-top: 5px;
+}
+.labels {
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+  text-align: right;
+  padding: 5px;
+  /*margin-top: 10px;*/
+}
+
+.rightTab {
+  display: inline-block;
+  width: 60%;
+  vertical-align: top;
+  text-align: left;
+}
+
+
+li {
+  list-style: none;
+}
+
+.input-field {
+  height: 20px;
+  width: 75%;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#dropdown {
+  height: 35px;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  display: block;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#date {
+  height: 25px;
+  width: 35%;
+  padding: 5px;
+  margin: 5px;
+
+  font-size: 0.8em;
+  text-align: center;
+}
+#comment {
+  min-height:50px;
+  resize:vertical;
+  width: 80%;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  height: 30px;
+  width: 20%;
+  max-width: 120px;
+  margin: 20px;
+  border: 0px solid;
+}
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

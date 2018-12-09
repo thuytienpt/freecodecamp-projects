@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 id="title">Customer Feedback Form</h1>
+    <div class="container">
+        <p id="description"> Please use this form to give us your suggestions, compliments or complains. Let us know how we can improve services for the comunity</p>
+        <form id="survey-form">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" name="name" id="name" class="input-field" required placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label">* Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                <label id="number-label">* Age: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="age" id="number" class="input-field"  min="1" max="100" placeholder="Age">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="feedbacks">This feedback is a: </label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="feedbacks">
+                        <option disabled >Select an option</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="compliment">Compliment</option>
+                        <option value="complaint">Complaint</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="rowTab">
+                <div class="labels">
+                    <label>About which service ?</label>
+                </div>
+                <div class="rightTab">
+                    <ul class="checkbox">
+                        <li><label><input type="checkbox" name="services" value="1">inquiries/information</label></li>
+                        <li><label><input type="checkbox" name="services" value="2">complaint handling/ dispute resolution</label></li>
+                        <li><label><input type="checkbox" name="services" value="3">home building licenses</label></li>
+                        <li><label><input type="checkbox" name="services" value="4">business licenses</label></li>
+                        <li><label><input type="checkbox" name="services" value="5">inspections/ investigations</label></li>
+                        <li><label><input type="checkbox" name="services" value="6">tenancy/ rental bonds</label></li>
+                        <li><label><input type="checkbox" name="services" value="7">strata/strata mediation</label></li>
+                        <li><label><input type="checkbox" name="services" value="8">co-operatives/ associations</label></li>
+                        <li><label><input type="checkbox" name="services" value="9">loose-fill asbestos implementation taskforce</label></li>
+                        <li><label><input type="checkbox" name="services" value="10">other</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label>About which issue ?</label>
+                </div>
+                <div class="rightTab">
+                    <ul class="checkbox">
+                        <li><label><input type="checkbox" name="issues" value="1">Fair Trading decision, policy or procedure</label></li>
+                        <li><label><input type="checkbox" name="issues" value="2">administration or legislation</label></li>
+                        <li><label><input type="checkbox" name="issues" value="3">information accuracy</label></li>
+                        <li><label><input type="checkbox" name="issues" value="4">timeliness of service</label></li>
+                        <li><label><input type="checkbox" name="issues" value="5">staff actions/ customer service</label></li>
+                        <li><label><input type="checkbox" name="issues" value="6">fees/ charges</label></li>
+                        <li><label><input type="checkbox" name="issues" value="7">website</label></li>
+                        <li><label><input type="checkbox" name="issues" value="8">other</label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label>How did we provide the service? </label>
+                </div>
+                <div class="rightTab">
+                    <ul class="checkbox">
+                        <li><label><input type="checkbox" name="method" value="1">phone</label></li>
+                        <li><label><input type="checkbox" name="method" value="2">website</label></li>
+                        <li><label><input type="checkbox" name="method" value="3">letter</label></li>
+                        <li><label><input type="checkbox" name="method" value="4">seminar</label></li>
+                        <li><label><input type="checkbox" name="method" value="5">email</label></li>
+                        <li><label><input type="checkbox" name="method" value="6">other</label></li>
+                        <li>
+                            <label>Phone number called:<input type="text=" name="method" class="input-field" placeholder="Enter phone number called if appropriate..."></label>
+                        </li>
+                        <li><label>Name of officer :<input type="text=" name="method" class="input-field" placeholder="Name of officer if appropriate..."></label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label>When did we provide the service?</label>
+                </div>
+                <div class="rightTab">
+                    <input type="date" name="datetime" max="1979-12-31" id="date">
+                <!-- <label>Time: <input type="time" name="datetime"></label> -->
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="surveyors">Are you:</label>
+                </div>
+                <div class="rightTab">
+                    <ul class="radio">
+                        <li><label><input type="radio" name="surveyors" value="1">A trader</label></li>
+                        <li><label><input type="radio" name="surveyors" value="2">A consumer</label></li>
+                        <li><label><input type="radio" name="surveyors" value="3">Providing feedback on behalf of someone else</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label>Please write details of your feedback here:</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+         </form>
+    </div>
+</body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+
